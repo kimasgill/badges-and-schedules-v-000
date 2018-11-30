@@ -1,9 +1,15 @@
 # Write your code here.
 
+<<<<<<< HEAD
+=======
+attendees = ["Edsgar", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+
+>>>>>>> 0b9c142c4409d978acd3b3500c0c0a48f539c442
 def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
+<<<<<<< HEAD
 def batch_badge_creator(attendees) 
   attendees.map {|name| badge_maker(name)}
 end
@@ -30,5 +36,10 @@ def printer(attendees)
   end
   assign_rooms(attendees).each do |room|
     puts room
+=======
+def batch_badge_creator(name)
+  attendees.each do |i|
+    attendees << badge_maker(name)
+>>>>>>> 0b9c142c4409d978acd3b3500c0c0a48f539c442
   end
 end
